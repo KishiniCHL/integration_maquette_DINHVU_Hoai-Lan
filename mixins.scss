@@ -1,0 +1,19 @@
+@mixin flex($flex_direction : null, $align_items : null, $justify_content : null){
+    display: flex;
+    @if($flex_direction != null){
+        flex-direction: $flex_direction;
+    }
+    @if($align_items != null){
+        align-items: $align_items;
+    }
+    @if ($justify_content != null) {
+        justify-content: $justify_content;
+    } 
+}
+
+
+@mixin breakpoint($width){
+    @media screen and (max-width: $width){
+        @content;
+    }
+}

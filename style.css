@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1E1E1E;
+}
+
+#header {
+  margin-top: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header #containerLogoGreatings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header #containerLogoGreatings #theLogo {
+  margin-left: 5.3rem;
+  max-width: 25.5rem;
+}
+#header #containerLogoGreatings #theLogo #VectorLogo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#header #containerLogoGreatings #greatingsUser {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 3.5rem;
+  margin-left: 5.6rem;
+}
+#header #containNotifSearch {
+  display: flex;
+  flex-direction: row;
+}
+#header #containNotifSearch #searchBar {
+  max-width: 47.6rem;
+  height: 5rem;
+  border-radius: 1.5rem;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+#header #containNotifSearch #searchBar #searchIconContainer {
+  margin-left: 2.3rem;
+  margin-right: 1.509rem;
+}
+#header #containNotifSearch #searchBar #searchIconContainer #searchIcon {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+#header #containNotifSearch #searchBar #theSearBar {
+  height: 5rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+}
+#header #containNotifSearch #searchBar #theSearBar::placeholder {
+  color: #000000;
+}
+#header #containNotifSearch #notification {
+  margin-left: 10.3rem;
+}
+#header #profilePic {
+  margin-right: 1.9rem;
+}
+
+#leftContent {
+  margin-top: 13.3rem;
+  margin-left: 6.3rem;
+}
+#leftContent #dashboardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25.3rem;
+  height: 6.5rem;
+  border-radius: 1.7rem;
+  margin-bottom: 4.4rem;
+  background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
+}
+#leftContent #dashboardContainer p {
+  font-size: 2.5rem;
+}
+#leftContent #dashboardContainer #dashBoardIcon {
+  padding-right: 1.7rem;
+}
+#leftContent .dashboardOnglet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.65rem;
+}
+#leftContent .dashboardOnglet p {
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  opacity: 80%;
+}
+#leftContent #logout {
+  margin-top: 26.7rem;
+}
+
+/*# sourceMappingURL=style.css.map */

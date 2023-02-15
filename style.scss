@@ -1,0 +1,129 @@
+@use "mixins";
+
+$poppins: 'Poppins', sans-serif;
+$inter : 'Inter', sans-serif;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: $poppins;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    background-color:  #1E1E1E;
+}
+
+
+#header{
+    margin-top:5.5rem; 
+    @include mixins.flex(null, center, space-between);
+
+
+    #containerLogoGreatings{
+        @include mixins.flex(null, center, space-between);
+
+        #theLogo{
+            margin-left: 5.3rem;
+            max-width:25.5rem;
+            #VectorLogo{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        #greatingsUser{
+            color:  #FFFFFF;
+            font-weight: 500;
+            font-size: 3.5rem;
+            margin-left: 5.6rem
+        }
+    }
+
+    #containNotifSearch{
+        @include mixins.flex(row, null, null);
+
+        #searchBar{
+            max-width: 47.6rem;
+            height: 5rem;
+            border-radius: 1.5rem;
+            background-color: #FFFFFF;
+            @include mixins.flex(null, center,null);
+
+            #searchIconContainer{
+                margin-left: 2.3rem;
+                margin-right: 1.509rem;
+                // margin-top: 0.847rem;
+                // margin-bottom: 0.847rem;
+                #searchIcon{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                    // object-fit: contain;
+                }
+            }
+
+            #theSearBar{
+                height: 5rem;
+                width: 100%;
+                border-radius: 1.5rem;
+                border:none;
+                font-family: $inter;
+                font-size: 2.5rem;
+            }
+
+            #theSearBar::placeholder{
+                color: #000000;
+            }
+        }
+        #notification{
+            margin-left: 10.3rem;
+        }
+    }
+
+    #profilePic{
+        margin-right: 1.9rem;
+    }
+    
+}
+
+
+#leftContent{
+    margin-top: 13.3rem;
+    margin-left: 6.3rem;
+
+    #dashboardContainer{
+        @include mixins.flex(null, center , center);
+        width: 25.3rem;
+        height: 6.5rem;
+        border-radius: 1.7rem;
+        margin-bottom: 4.4rem;
+        background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
+        p{
+            font-size: 2.5rem;
+        }
+        #dashBoardIcon{
+            padding-right: 1.7rem;
+        }
+    }
+
+    .dashboardOnglet{
+        @include mixins.flex(row, center, null);
+        padding: 1.65rem;
+        p{
+            margin-left: 1rem;
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: #FFFFFF;
+            opacity: 80%;
+        }
+    }
+
+    #logout{
+        margin-top:26.7rem;
+    }
+}
