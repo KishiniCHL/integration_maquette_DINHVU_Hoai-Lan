@@ -112,8 +112,14 @@ body{
     }
 
     .dashboardOnglet{
-        @include mixins.flex(row, center, null);
+        @include mixins.flex(row, center,null);
         padding: 1.65rem;
+
+        .dashboardIcon{
+            @include mixins.flex(null, null, center);
+            width: 5.6rem;
+        }
+    
         p{
             margin-left: 1rem;
             font-size: 2.5rem;
