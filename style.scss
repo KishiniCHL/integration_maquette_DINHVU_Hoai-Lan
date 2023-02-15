@@ -91,6 +91,11 @@ body{
     
 }
 
+#partsContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 #leftContent{
     margin-top: 13.3rem;
@@ -132,4 +137,66 @@ body{
     #logout{
         margin-top:26.7rem;
     }
+}
+
+#middleContent{
+    background-color: #1970D6;
+
+    #topInfoContent{
+        @include mixins.flex(null, center, center);
+        #balanceContainer{
+            color: #FFFFFF;
+            font-family: $poppins;
+            #balanceText{
+                font-weight: bold;
+                font-size: 2.2rem;
+            }   
+            #bitcoinBalance{
+                font-size: 2.9rem;
+                font-weight: 700;
+                #iconBTC{
+                    @include mixins.flex(null, center, center);
+                    width: 4.9rem;
+                    height: 2.5rem;
+                    background-color: #FAFF00;
+                    border-radius: 0.8rem;
+                    p{
+                        font-size: 1.5rem;
+                        font-family:$inter;
+                        font-weight: 700;
+                        color: #000000; 
+                    }
+                }
+            }
+            #balanceMoney{
+                opacity: 70%;
+                font-size: 2.2rem;
+                font-weight: 600;
+            }
+        }
+
+        #graphCategories{
+            background-color:#292727;
+            height: 6.2rem;
+            width: 43.9rem;
+            border-radius: 1.7rem;
+            #categoriesContainer{
+                @include mixins.flex(row, center, space-between);
+                padding:1.1rem 1.9rem;
+                .categoriesButton{
+                    font-family: $poppins;
+                    color: #FFFFFF;
+                    font-size: 2.2rem;
+                }
+                #portfolio{
+                    padding: 0.55rem 2.2rem;
+                    background-color: #0D0C0C;
+                    border-radius: 1.7rem;
+                    
+                }
+            }
+           
+        }
+    }
+    
 }
