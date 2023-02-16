@@ -80,7 +80,6 @@ body {
 
 #partsContainer {
   display: flex;
-  justify-content: space-between;
 }
 
 #leftContent {
@@ -125,17 +124,17 @@ body {
   margin-top: 26.7rem;
 }
 
-#middleContent {
-  background-color: #1970D6;
-}
 #middleContent #topInfoContent {
+  margin-top: 3.5rem;
+  margin-bottom: 4.2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 #middleContent #topInfoContent #balanceContainer {
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
+  margin-right: 9.1rem;
 }
 #middleContent #topInfoContent #balanceContainer #balanceText {
   font-weight: bold;
@@ -144,11 +143,14 @@ body {
 #middleContent #topInfoContent #balanceContainer #bitcoinBalance {
   font-size: 2.9rem;
   font-weight: 700;
+  display: flex;
+  align-items: center;
 }
 #middleContent #topInfoContent #balanceContainer #bitcoinBalance #iconBTC {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 1.7rem;
   width: 4.9rem;
   height: 2.5rem;
   background-color: #FAFF00;
@@ -183,10 +185,36 @@ body {
   color: #FFFFFF;
   font-size: 2.2rem;
 }
-#middleContent #topInfoContent #graphCategories #categoriesContainer #portfolio {
+#middleContent #topInfoContent #graphCategories #categoriesContainer .categoriesClicked {
   padding: 0.55rem 2.2rem;
   background-color: #0D0C0C;
   border-radius: 1.7rem;
+}
+#middleContent #graph {
+  background-color: rgba(48, 53, 65, 0.67);
+  height: 55.8rem;
+  width: 95.4rem;
+}
+#middleContent #graph #daysContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+#middleContent #graph #daysContainer .days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 0.5rem;
+}
+#middleContent #graph #daysContainer .days p {
+  color: #FFFFFF;
+  font-size: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */
