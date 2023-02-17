@@ -99,7 +99,7 @@ body{
 
 #leftContent{
     margin-top: 13.3rem;
-    margin-left: 6.3rem;
+    // margin-left: 6.3rem;
     height: 88rem;
     @include mixins.flex(column, center, space-between);
 
@@ -187,7 +187,7 @@ body{
         #graphCategories{
             background-color:#292727;
             height: 6.2rem;
-            width: 43.9rem;
+            max-width: 43.9rem;
             border-radius: 1.7rem;
             #categoriesContainer{
                 @include mixins.flex(row, center, space-between);
@@ -233,7 +233,7 @@ body{
                 @include mixins.flex(row, center,space-around);
                 background-color: rgba(32, 35, 43, 0.7);
                 border-radius: 3rem;
-                width: 91.8rem;
+                max-width: 91.8rem;
                 height: 7.9rem;
             }
             p{
@@ -299,7 +299,7 @@ body{
         color: #FFFFFF;
     }
     #recentTransactions{
-        width: 40.7rem;
+        max-width: 40.7rem;
         // height: 32.3rem;
 
 
@@ -369,7 +369,7 @@ body{
         #assetsContainer{
             .assetBasicStyle{
                 @include mixins.flex(row, flex-end,space-between);
-                width: 40.7rem;
+                // width: 40.7rem;
                 height: 17.4rem;
                 border-radius: 3rem;
                 padding: 0.6rem 5.1rem 1.1rem 3.2rem;
