@@ -1,0 +1,332 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1E1E1E;
+}
+
+#header {
+  margin-top: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header #containerLogoGreatings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header #containerLogoGreatings #theLogo {
+  margin-left: 5.3rem;
+  max-width: 25.5rem;
+}
+
+#header #containerLogoGreatings #theLogo #VectorLogo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#header #containerLogoGreatings #greatingsUser {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 3.5rem;
+  margin-left: 5.6rem;
+}
+
+#header #containNotifSearch {
+  display: flex;
+  flex-direction: row;
+}
+
+#header #containNotifSearch #searchBar {
+  max-width: 47.6rem;
+  height: 5rem;
+  border-radius: 1.5rem;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+#header #containNotifSearch #searchBar #searchIconContainer {
+  margin-left: 2.3rem;
+  margin-right: 1.509rem;
+}
+
+#header #containNotifSearch #searchBar #searchIconContainer #searchIcon {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+#header #containNotifSearch #searchBar #theSearBar {
+  height: 5rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+}
+
+#header #containNotifSearch #searchBar #theSearBar::placeholder {
+  color: #000000;
+}
+
+#header #containNotifSearch #notification {
+  margin-left: 10.3rem;
+}
+
+#header #profilePic {
+  margin-right: 1.9rem;
+}
+
+#partsContainer {
+  display: flex;
+}
+
+#leftContent {
+  margin-top: 13.3rem;
+  margin-left: 6.3rem;
+}
+
+#leftContent #dashboardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25.3rem;
+  height: 6.5rem;
+  border-radius: 1.7rem;
+  margin-bottom: 4.4rem;
+  background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
+}
+
+#leftContent #dashboardContainer p {
+  font-size: 2.5rem;
+}
+
+#leftContent #dashboardContainer #dashBoardIcon {
+  padding-right: 1.7rem;
+}
+
+#leftContent .dashboardOnglet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.65rem;
+}
+
+#leftContent .dashboardOnglet .dashboardIcon {
+  display: flex;
+  justify-content: center;
+  width: 5.6rem;
+}
+
+#leftContent .dashboardOnglet p {
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  opacity: 80%;
+}
+
+#leftContent #logout {
+  margin-top: 26.7rem;
+}
+
+#middleContent #topInfoContent {
+  margin-top: 3.5rem;
+  margin-bottom: 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#middleContent #topInfoContent #balanceContainer {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  margin-right: 9.1rem;
+}
+
+#middleContent #topInfoContent #balanceContainer #balanceText {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+#middleContent #topInfoContent #balanceContainer #bitcoinBalance {
+  font-size: 2.9rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+#middleContent #topInfoContent #balanceContainer #bitcoinBalance #iconBTC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.7rem;
+  width: 4.9rem;
+  height: 2.5rem;
+  background-color: #FAFF00;
+  border-radius: 0.8rem;
+}
+
+#middleContent #topInfoContent #balanceContainer #bitcoinBalance #iconBTC p {
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+
+#middleContent #topInfoContent #balanceContainer #balanceMoney {
+  opacity: 70%;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+#middleContent #topInfoContent #graphCategories {
+  background-color: #292727;
+  height: 6.2rem;
+  width: 43.9rem;
+  border-radius: 1.7rem;
+}
+
+#middleContent #topInfoContent #graphCategories #categoriesContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.9rem;
+}
+
+#middleContent #topInfoContent #graphCategories #categoriesContainer .categoriesButton {
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  font-size: 2.2rem;
+}
+
+#middleContent #topInfoContent #graphCategories #categoriesContainer .categoriesClicked {
+  padding: 0.55rem 2.2rem;
+  background-color: #0D0C0C;
+  border-radius: 1.7rem;
+}
+
+#middleContent #graph {
+  background-color: rgba(48, 53, 65, 0.67);
+  height: 55.8rem;
+  width: 95.4rem;
+}
+
+#middleContent #graph #topInfoGraph {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#middleContent #graph #topInfoGraph #daysContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#middleContent #graph #topInfoGraph #daysContainer .days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 0.5rem;
+}
+
+#middleContent #graph #topInfoGraph #daysContainer .days p {
+  color: #FFFFFF;
+  font-size: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2.7rem;
+}
+
+#middleContent #graph #topInfoGraph #tradeBitcoinContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#middleContent #graph #topInfoGraph #tradeBitcoinContainer .tradingDivStyle {
+  background-color: #000000;
+  width: 15.2rem;
+  height: 3.7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#middleContent #graph #topInfoGraph #tradeBitcoinContainer .tradingDivStyle p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  opacity: 70%;
+  color: #FFFFFF;
+}
+
+#middleContent #graph #theGraph #topGraphContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#middleContent #graph #theGraph #topGraphContent #leftNumbers {
+  width: 14.9rem;
+  height: 41.2rem;
+  padding: 1.9rem 5.2rem;
+  padding-right: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#middleContent #graph #theGraph #topGraphContent #linesContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#middleContent #graph #theGraph #topGraphContent #linesContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#middleContent #graph #theGraph #bottomNumbers {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#middleContent #graph #theGraph .numbersGraph {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  opacity: 70%;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.cscc.map */

@@ -39,17 +39,30 @@ body {
   font-size: 3.5rem;
   margin-left: 5.6rem;
 }
+@media screen and (max-width: 1365px) {
+  #header #containerLogoGreatings #greatingsUser {
+    font-size: 2.4rem;
+    margin-left: 0;
+  }
+}
 #header #containNotifSearch {
   display: flex;
   flex-direction: row;
 }
 #header #containNotifSearch #searchBar {
   max-width: 47.6rem;
+  min-width: 40rem;
   height: 5rem;
   border-radius: 1.5rem;
   background-color: #FFFFFF;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 1365px) {
+  #header #containNotifSearch #searchBar {
+    max-width: 30rem;
+    min-width: 10rem;
+  }
 }
 #header #containNotifSearch #searchBar #searchIconContainer {
   margin-left: 2.3rem;
@@ -74,6 +87,11 @@ body {
 #header #containNotifSearch #notification {
   margin-left: 10.3rem;
 }
+@media screen and (max-width: 1365px) {
+  #header #containNotifSearch #notification {
+    margin: 0 1rem;
+  }
+}
 #header #profilePic {
   margin-right: 1.9rem;
 }
@@ -92,11 +110,18 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 1365px) {
+  #leftContent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
 #leftContent #dashboardContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25.3rem;
+  max-width: 25.3rem;
   height: 6.5rem;
   border-radius: 1.7rem;
   margin-bottom: 4.4rem;
@@ -107,6 +132,18 @@ body {
 }
 #leftContent #dashboardContainer #dashBoardIcon {
   padding-right: 1.7rem;
+}
+@media screen and (max-width: 1365px) {
+  #leftContent #dashboardContainer {
+    width: 8rem;
+    margin: 0;
+  }
+  #leftContent #dashboardContainer p {
+    display: none;
+  }
+  #leftContent #dashboardContainer #dashBoardIcon {
+    padding: 0;
+  }
 }
 #leftContent .dashboardOnglet {
   display: flex;
@@ -126,12 +163,36 @@ body {
   color: #FFFFFF;
   opacity: 80%;
 }
+@media screen and (max-width: 1365px) {
+  #leftContent #dashboardContent {
+    display: none;
+  }
+}
+@media screen and (max-width: 1365px) {
+  #leftContent #logout p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  #middleContent {
+    width: 80%;
+  }
+}
 #middleContent #topInfoContent {
   margin-top: 3.5rem;
   margin-bottom: 4.2rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+@media screen and (max-width: 1365px) {
+  #middleContent #topInfoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 #middleContent #topInfoContent #balanceContainer {
   color: #FFFFFF;
@@ -172,7 +233,7 @@ body {
 #middleContent #topInfoContent #graphCategories {
   background-color: #292727;
   height: 6.2rem;
-  max-width: 43.9rem;
+  width: 43.9rem;
   border-radius: 1.7rem;
 }
 #middleContent #topInfoContent #graphCategories #categoriesContainer {
@@ -192,8 +253,34 @@ body {
   background-color: #0D0C0C;
   border-radius: 1.7rem;
 }
+@media screen and (max-width: 1365px) {
+  #middleContent #graphTransaction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#middleContent #graph {
+  width: 100%;
+}
+@media screen and (max-width: 1365px) {
+  #middleContent #graph #theGraph img {
+    width: 100%;
+    height: 100%;
+  }
+}
 #middleContent #transaction {
+  width: 100%;
   margin-top: 2.1rem;
+}
+@media screen and (max-width: 1365px) {
+  #middleContent #transaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 #middleContent #transaction #transactionTitle p {
   font-family: "Poppins", sans-serif;
@@ -222,6 +309,12 @@ body {
   font-size: 1.7rem;
   color: #FFFFFF;
   opacity: 0.95;
+}
+@media screen and (max-width: 1365px) {
+  #middleContent #transaction #transactionInfoContainer p {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+  }
 }
 #middleContent #transaction #transactionInfoContainer #textTransactionBlue {
   color: #1970D6;
@@ -262,6 +355,11 @@ body {
   color: #FFFFFF;
   padding: 0.6rem 1.8rem;
 }
+@media screen and (max-width: 1365px) {
+  #middleContent #transaction #transactionInfoContainer .tradeButton {
+    margin: 0.5rem;
+  }
+}
 
 #rightContent {
   height: 91.7rem;
@@ -269,6 +367,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 8.793rem;
+}
+@media screen and (max-width: 1365px) {
+  #rightContent {
+    display: flex;
+    align-items: center;
+  }
 }
 #rightContent #titleRecent {
   font-family: "Poppins", sans-serif;
@@ -291,14 +395,38 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+@media screen and (max-width: 1365px) {
+  #rightContent #recentTransactions #recentTransactionContainer .recentStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 #rightContent #recentTransactions #recentTransactionContainer .recentStyle .secondContentStyleRecent {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.9rem;
   color: #FFFFFF;
 }
+@media screen and (max-width: 1365px) {
+  #rightContent #recentTransactions #recentTransactionContainer .recentStyle .secondContentStyleRecent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 #rightContent #recentTransactions #recentTransactionContainer .recentStyle .secondContentStyleRecent p:nth-child(2) {
   opacity: 0.7;
+}
+@media screen and (max-width: 1365px) {
+  #rightContent #recentTransactions #recentTransactionContainer .recentStyle .thirdContentStyleRecent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 #rightContent #recentTransactions #recentTransactionContainer .recentStyle .thirdContentStyleRecent .moneyRecentGreen {
   color: #4AD619;
@@ -336,6 +464,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1365px) {
+  #rightContent #assets {
+    margin-top: 45rem;
+  }
+}
 #rightContent #assets #assetTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -343,11 +476,19 @@ body {
   color: #FFFFFF;
   margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 1365px) {
+  #rightContent #assets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #rightContent #assets #assetsContainer .assetBasicStyle {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
+  max-width: 40.7rem;
   height: 17.4rem;
   border-radius: 3rem;
   padding: 0.6rem 5.1rem 1.1rem 3.2rem;
