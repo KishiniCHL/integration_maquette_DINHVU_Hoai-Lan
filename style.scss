@@ -92,14 +92,17 @@ body{
 }
 
 #partsContainer{
-    display: flex;
-    // justify-content: space-between;
+    @include mixins.flex(row, null, space-around);
+
 }
 
 
 #leftContent{
     margin-top: 13.3rem;
     margin-left: 6.3rem;
+    height: 88rem;
+    @include mixins.flex(column, center, space-between);
+
 
     #dashboardContainer{
         @include mixins.flex(null, center , center);
@@ -135,7 +138,7 @@ body{
     }
 
     #logout{
-        margin-top:26.7rem;
+        // margin-top:26.7rem;
     }
 }
 
@@ -205,89 +208,202 @@ body{
         }
     }
     
-    #graph{
-        background-color: rgba(48, 53, 65, 0.67);
-        height: 55.8rem;
-        width: 95.4rem;
-        #topInfoGraph{
-            @include mixins.flex(row, center, space-between);
+    // #graph{
 
-            #daysContainer{
-                @include mixins.flex(row, center, flex-start);
-    
-                .days{
-                    @include mixins.flex(null, center, center);
-                    background-color: #000000;
-                    width: 4.2rem;
-                    height: 4.2rem;
-                    border-radius: 0.5rem;
-                    p{  
-                        color: #FFFFFF;
-                        font-size: $poppins;
-                        font-weight: 500;
-                        font-size: 2.7rem;
-                    }
-    
-                }
+    // }
+
+    #transaction{
+        margin-top: 2.1rem;
+        #transactionTitle{
+            p{
+                font-family: $poppins;
+                font-weight: 700;
+                color: #FFFFFF;
+                font-size: 2.2rem;
             }
-            #tradeBitcoinContainer{
-                @include mixins.flex(row, center,null);
+        }
+        #transaction1{
+            margin-top: 2.3rem;
+        }
+        #transaction2{
+            margin-top: 2.1rem
+        }
+        #transactionInfoContainer{
+            .transactionStyle{
+                @include mixins.flex(row, center,space-around);
+                background-color: rgba(32, 35, 43, 0.7);
+                border-radius: 3rem;
+                width: 91.8rem;
+                height: 7.9rem;
+            }
+            p{
+                font-family: $inter;
+                font-size: 1.7rem;
+                color: #FFFFFF;
+                opacity: 0.95;
+            }
+            #textTransactionBlue{
+                color: #1970D6;
+                opacity: 0.7;
+                font-family: $inter;
+                font-weight: 600;
+                font-size: 1.7rem;
+            }
+            #textTransactionViolet{
+                color: #6C1182;
+                opacity: 0.7;
+                font-family: $inter;
+                font-weight: 600;
+                font-size: 1.7rem;
+            }
+            #textTransactionRed{
+                color: #D61919;
+                opacity: 0.7;
+                font-family: $inter;
+                font-weight: 600;
+                font-size: 1.7rem;
+            }
+            #textTransactionGreen{
+                color: #4AD619;
+                opacity: 0.7;
+                font-family: $inter;
+                font-weight: 600;
+                font-size: 1.7rem;
+            }
+
+            .tradeButton{
+                background-color: #000000;
+                border-radius: 3rem;
+                p{
+                    font-family: $inter;
+                    font-weight: 600;
+                    font-size: 1.7rem;
+                    color: #FFFFFF;
+                    padding: 0.6rem 1.8rem;
+                }
+                
+            }
+        }
+    }
+}
+
+#rightContent{
+    height: 91.7rem;
+    @include mixins.flex(column, null , space-between);
+    margin-top: 8.793rem;
+
+    #titleRecent{
+        font-family: $poppins;
+        font-weight: 700;
+        font-size: 2.2rem;
+        color: #FFFFFF;
+    }
+    #recentTransactions{
+        width: 40.7rem;
+        // height: 32.3rem;
 
 
-                .tradingDivStyle{
-                    background-color: #000000;
-                    width: 15.2rem;
-                    height: 3.7rem;
-                    @include mixins.flex(row, center,space-around);
-                    p{
-                        font-size: 1.7rem;
+        #recentTransactionContainer{
+            height: 36.3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .recentStyle{
+                @include mixins.flex(row, center,space-around);
+                .secondContentStyleRecent{
+                    font-family: $inter;
+                    font-weight: 600;
+                    font-size: 1.9rem;
+                    color: #FFFFFF;
+                    p:nth-child(2){
+                        opacity: 0.7;
+                    }
+                }
+
+                .thirdContentStyleRecent{
+                    .moneyRecentGreen{
+                        color: #4AD619;
+                        font-family: $inter;
                         font-weight: 600;
-                        font-family: $poppins;
-                        opacity: 70%;
+                        font-size: 1.9rem;
+                    }
+                    .moneyRecentRed{
+                        color: #D61919;
+                        font-family: $inter;
+                        font-weight: 600;
+                        font-size: 1.9rem;
+                    }
+                    .dateRecent{
+                        font-family: $inter;
+                        font-weight: 600;
+                        font-size: 1.9rem;
                         color: #FFFFFF;
+                        opacity: 0.7;
+                    }
+                }
+
+                .recentIconContainer{
+                    @include mixins.flex(null, center , center);
+                    width: 5.4rem;
+                    height: 5.4rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
                     }
                 }
             }
         }
+    }
+    #assets{
+        margin-top: 5.2rem;
+        #assetTitle{
+            font-family: $poppins;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #FFFFFF;
+            margin-bottom: 1.5rem
+        }
+        @include mixins.flex(column, null,null);
 
-        #theGraph{
-            #topGraphContent{
-                @include mixins.flex(row, center,null);
+        #assetsContainer{
+            .assetBasicStyle{
+                @include mixins.flex(row, flex-end,space-between);
+                width: 40.7rem;
+                height: 17.4rem;
+                border-radius: 3rem;
+                padding: 0.6rem 5.1rem 1.1rem 3.2rem;
 
-                #leftNumbers{
-                    width: 14.9rem;
-                    height: 41.2rem;
-                    padding: 1.9rem 5.2rem;
-                    padding-right: 1.1rem;
-                    @include mixins.flex(column, center,space-between);
+                .firstContentAsset{
+                    p{
+                        font-family: $inter;
+                        font-weight: 600;
+                        font-size: 1.9rem;
+                    }
+                    p:nth-child(3){
+                        font-size: 2.7rem;
+                    }
                 }
 
-                #linesContainer{
-                    position: relative;
-                    @include mixins.flex(row, center,null);
-                    img{
-                        position: absolute;
-                        top: 0;
-                        left: 0;
+                .secondContentAsset{
+                    p{
+                        font-family: $inter;
+                        font-weight: 600;
+                        font-size: 2.7rem;
                     }
                 }
             }
-            
-            #bottomNumbers{
-                width: 100%;
-                // @include mixins.grid(2,15,9,10);
-                @include mixins.flex(row, center,space-around);
 
+            #ethAsset{
+                color: #000000;
+                background: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
+                
             }
-
-            .numbersGraph{
-                font-family:$poppins;
-                font-weight: 600;
-                font-size: 1.7rem;
-                opacity: 70%;
+            #btcAsset{
                 color: #FFFFFF;
+                margin-bottom: 2.8rem;
+                background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
             }
-
         }
     }
 }

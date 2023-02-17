@@ -42,6 +42,7 @@
     <!-- left content -->
 
         <section id="leftContent">
+            <div>
             <div id="dashboardContainer">
                 <img src="/img/dashboard.svg" id="dashBoardIcon" alt="Dashboard icon">
                 <p>Dashboard</p>
@@ -97,6 +98,7 @@
                     </div>
                 </div>
             </div>
+        </div>
 
             <div id="logout">
                 <div class="dashboardOnglet">
@@ -134,74 +136,172 @@
             </div>
 
             <div id="graph">
-                <div id="topInfoGraph">
-                    <div id="daysContainer">
-                        <div class="days"><p>1H</p></div>
-                        <div class="days"><p>1H</p></div>
-                        <div class="days"><p>3D</p></div>
-                        <div class="days"><p>1W</p></div>
-                        <div class="days"><p>1M</p></div>
-                        <div class="days"><img src="/img/Vector.svg" alt="Calender Icon"></div>
-                    </div>
-                    <div id="tradeBitcoinContainer">
-                        <div id="btcTrade" class="tradingDivStyle">
-                            <img src="/img/bitcoinlogo.svg" alt="Logo bitcoin">
+                <div id="theGraph">
+
+                        <img src="/img/graph.svg" alt="graph">
+
+                </div>
+            </div>
+
+            <div id="transaction">
+                <div id="transactionTitle">
+                    <p>Recent transaction</p>
+                </div>
+                <div id="transactionInfoContainer">
+                    <div id="transaction1" class="transactionStyle">
+                        <div>
+                            <img src="img/Bitcoin.svg" alt="Bitcoin logo">
+                        </div>
+                        <div class="firstContentTransaction">
+                            <p>Bitcoin</p>
                             <p>BTC</p>
-                            <img src="img/arrowdown.svg" alt="See more arrow">
+                        </div>
+                        <div class="secondContentTransaction">
+                            <p>Market Cap</p>
+                            <p id="textTransactionBlue">$40,243,70</p>
                         </div>
                         <div>
-                            <img src="/img/compareArrows.svg" alt="Arrows comparing">
+                            <p>24h change</p>
+                            <p id="textTransactionGreen">+1,56</p>
                         </div>
-                        <div id="ethTrade" class="tradingDivStyle">
-                            <img src="/img/ethlogo.svg" alt="Logo ETH">
-                            <p>ETH</p>
-                            <img src="img/arrowdown.svg" alt="See more arrow">
+                        <div>
+                            <img src="/img/linetransaction.svg" alt="line">
+                        </div>
+                        <div class="tradeButton">
+                            <p>Trade</p>
                         </div>
                     </div>
-                </div>
-                <div id="theGraph">
-                    <div id="topGraphContent">
-                        <div id="leftNumbers">
-                            <p class="numbersGraph">$700</p>
-                            <p class="numbersGraph">$600</p>
-                            <p class="numbersGraph">$500</p>
-                            <p class="numbersGraph">$400</p>
-                            <p class="numbersGraph">$300</p>
-                            <p class="numbersGraph">$200</p>
-                            <p class="numbersGraph">$100</p>
+                    <div id="transaction2" class="transactionStyle">
+                        <div id="logoTransactionETH">
+                            <img src="/img/Etheriumicon.svg" alt="Bitcoin logo">
                         </div>
-                        <div id="linesContainer">
-                            <div><img src="/img/lineGraph1.svg" alt="Line of Graph" class="linesGraph" id="line1"></div>
-                            <div><img src="/img/lineGraph2.svg" alt="Line of Graph" class="linesGraph" id="line2"></div>
-                            <div><img src="/img/lineGraph3.svg" alt="Line of Graph" class="linesGraph" id="line3"></div>
+                        <div class="firstContentTransaction">
+                            <p>Bitcoin</p>
+                            <p>BTC</p>
                         </div>
-                        
+                        <div class="secondContentTransaction">
+                            <p>Market Cap</p>
+                            <p id="textTransactionViolet">$40,243,70</p>
+                        </div>
+                        <div>
+                            <p>24h change</p>
+                            <p id="textTransactionRed">+1,56</p>
+                        </div>
+                        <div>
+                            <img src="/img/linetransaction2.svg" alt="line">
+                        </div>
+                        <div class="tradeButton">
+                            <p>Trade</p>
+                        </div>
                     </div>
-                    <div id="bottomNumbers">
-                        <p class="numbersGraph">5Nov</p>
-                        <p class="numbersGraph">6Nov</p>
-                        <p class="numbersGraph">7Nov</p>
-                        <p class="numbersGraph">8Nov</p>
-                        <p class="numbersGraph">9Nov</p>
-                        <p class="numbersGraph">10Nov</p>
-                        <p class="numbersGraph">11Nov</p>
-                        <p class="numbersGraph">12Nov</p>
-                        <p class="numbersGraph">13Nov</p>
-                        <p class="numbersGraph">14Nov</p>
-                        <p class="numbersGraph">15Nov</p>
-                        <p class="numbersGraph">16Nov</p>
-                    </div>
-                </div>
-
-                <div id="transaction">
-                    <!-- <p>Recent transaction</p> -->
                 </div>
             </div>
 
         </section>
 
         <section id="rightContent">
+            <p id="titleRecent">Recent Transactions</p>
+            <div id="recentTransactions">
+                
+                <div id="recentTransactionContainer">
+                    <div class="recentStyle" id="firstRecent">
+                        <div class="recentIconContainer">
+                            <img src="/img/tether.svg" alt="Tether icon">
+                        </div>
+                        <div class="secondContentStyleRecent">
+                            <p>Usdt</p>
+                            <p>Received</p>
+                        </div>
+                        <div class="thirdContentStyleRecent">
+                            <p class="moneyRecentGreen">+$3,546</p>
+                            <p class="dateRecent">Today, 13:45 pm</p>
+                        </div>
+                    </div>
+                    <div class="recentStyle" id="secondRecent">
+                        <div class="recentIconContainer">
+                            <img src="/img/Binance-Coin.png" alt="Binance icon">
+                        </div>
+                        <div class="secondContentStyleRecent">
+                            <p>Usdt</p>
+                            <p>Received</p>
+                        </div>
+                        <div class="thirdContentStyleRecent">
+                            <p class="moneyRecentRed">+$3,546</p>
+                            <p class="dateRecent">Today, 13:45 pm</p>
+                        </div>
+                    </div>
+                    <div class="recentStyle" id="thirdRecent">
+                        <div class="recentIconContainer">
+                            <img src="/img/Logo.svg" alt="Lite icon">
+                        </div>
+                        <div class="secondContentStyleRecent">
+                            <p>Usdt</p>
+                            <p>Received</p>
+                        </div>
+                        <div class="thirdContentStyleRecent">
+                            <p class="moneyRecentGreen">+$3,546</p>
+                            <p class="dateRecent">Today, 13:45 pm</p>
+                        </div>
+                    </div>
+                    <div class="recentStyle" id="fourthRecent">
+                        <div class="recentIconContainer">
+                            <img src="/img/btcrecent.svg" alt="Bitcoin icon">
+                        </div>
+                        <div class="secondContentStyleRecent">
+                            <p>Usdt</p>
+                            <p>Received</p>
+                        </div>
+                        <div class="thirdContentStyleRecent">
+                            <p class="moneyRecentGreen">+$3,546</p>
+                            <p class="dateRecent">Today, 13:45 pm</p>
+                        </div>
+                    </div>
+                    <div class="recentStyle" id="fifthRecent">
+                        <div class="recentIconContainer">
+                            <img src="/img/Etheriumiconrecent.svg" alt="Etherium icon">
+                        </div>
+                        <div class="secondContentStyleRecent">
+                            <p>Usdt</p>
+                            <p>Received</p>
+                        </div>
+                        <div class="thirdContentStyleRecent">
+                            <p class="moneyRecentGreen">+$3,546</p>
+                            <p class="dateRecent">Today, 13:45 pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- assets -->
+
+            <div id="assets">
+                <p id="assetTitle">Assets</p>
+                <div id="assetsContainer">
+                    <div id="btcAsset" class="assetBasicStyle">
+                        <div class="firstContentAsset" id="btcText">
+                            <img src="/img/BitcoinAsset.svg" alt="Bitcoin icon">
+                            <p>Bitcoin</p>
+                            <p>121,6450.45</p>
+                        </div>
+                        <div class="secondContentAsset">
+                            <div >
+                            <p>BTC</p>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <div id="ethAsset" class="assetBasicStyle">
+                        <div class="firstContentAsset" id="ethText">
+                            <img src="/img/EtheriumAsset.svg" alt="Etherium icon">
+                            <p>Etherium</p>
+                            <p>143,850.45</p>
+                        </div>
+                        <div class="secondContentAsset">
+                            <p>ETH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
