@@ -24,6 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 2rem;
   }
 }
 #header #burgerMenu {
@@ -117,8 +118,21 @@ body {
     margin: 0 1rem;
   }
 }
+@media screen and (max-width: 710px) {
+  #header #containNotifSearch #notification img {
+    width: 95%;
+  }
+}
 #header #profilePic {
   margin-right: 1.9rem;
+}
+@media screen and (max-width: 710px) {
+  #header #profilePic {
+    margin-right: 1rem;
+  }
+  #header #profilePic img {
+    width: 90%;
+  }
 }
 
 #partsContainer {
@@ -237,6 +251,16 @@ body {
   font-family: "Poppins", sans-serif;
   margin-right: 9.1rem;
 }
+@media screen and (max-width: 1365px) {
+  #middleContent #topInfoContent #balanceContainer {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 710px) {
+  #middleContent #topInfoContent #balanceContainer {
+    margin-bottom: 3rem;
+  }
+}
 #middleContent #topInfoContent #balanceContainer #balanceText {
   font-weight: bold;
   font-size: 2.2rem;
@@ -284,6 +308,11 @@ body {
   width: 43.9rem;
   border-radius: 1.7rem;
 }
+@media screen and (max-width: 710px) {
+  #middleContent #topInfoContent #graphCategories {
+    max-width: 30rem;
+  }
+}
 #middleContent #topInfoContent #graphCategories #categoriesContainer {
   display: flex;
   flex-direction: row;
@@ -291,10 +320,20 @@ body {
   justify-content: space-between;
   padding: 1.1rem 1.9rem;
 }
+@media screen and (max-width: 710px) {
+  #middleContent #topInfoContent #graphCategories #categoriesContainer {
+    gap: 0.4rem;
+  }
+}
 #middleContent #topInfoContent #graphCategories #categoriesContainer .categoriesButton {
   font-family: "Poppins", sans-serif;
   color: #FFFFFF;
   font-size: 2.2rem;
+}
+@media screen and (max-width: 710px) {
+  #middleContent #topInfoContent #graphCategories #categoriesContainer .categoriesButton {
+    font-size: 1.5rem;
+  }
 }
 #middleContent #topInfoContent #graphCategories #categoriesContainer .categoriesClicked {
   padding: 0.55rem 2.2rem;
@@ -330,6 +369,14 @@ body {
     justify-content: center;
   }
 }
+@media screen and (max-width: 710px) {
+  #middleContent #transaction {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 4rem;
+  }
+}
 #middleContent #transaction #transactionTitle {
   display: flex;
   flex-direction: row;
@@ -341,6 +388,11 @@ body {
   font-weight: 700;
   color: #FFFFFF;
   font-size: 2.2rem;
+}
+@media screen and (max-width: 710px) {
+  #middleContent #transaction #transactionTitle p {
+    font-size: 1.7rem;
+  }
 }
 #middleContent #transaction #transactionTitle p:nth-child(2) {
   opacity: 0.7;
@@ -365,6 +417,16 @@ body {
   border-radius: 3rem;
   max-width: 91.8rem;
   height: 7.9rem;
+}
+@media screen and (max-width: 710px) {
+  #middleContent #transaction #transactionInfoContainer .transactionStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    max-width: 100vh;
+  }
 }
 #middleContent #transaction #transactionInfoContainer p {
   font-family: "Inter", sans-serif;
@@ -464,6 +526,7 @@ body {
 }
 @media screen and (max-width: 710px) {
   #rightContent {
+    margin: 0rem;
     width: 100%;
   }
 }
@@ -494,7 +557,7 @@ body {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1.5rem;
   }
 }
 #rightContent #recentTransactions #recentTransactionContainer .recentStyle {
