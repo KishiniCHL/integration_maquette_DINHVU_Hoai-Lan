@@ -22,13 +22,13 @@ body{
 #header{
     margin-top:5.5rem; 
     @include mixins.flex(null, center, space-between);
-    @include mixins.breakpoint(745px){
+    @include mixins.breakpoint(710px){
         @include mixins.flex(null, center, space-around);
-
     }
+
     #burgerMenu{
         display: none;
-        @include mixins.breakpoint(745px){
+        @include mixins.breakpoint(710px){
             display: block;
         }
     }
@@ -54,7 +54,7 @@ body{
                 font-size: 2.4rem;
                 margin-left: 0;
             }
-            @include mixins.breakpoint(745px){
+            @include mixins.breakpoint(710px){
                 display: none
             }
             
@@ -75,7 +75,7 @@ body{
                 max-width: 30rem;
                 min-width: 10rem;
             }
-            @include mixins.breakpoint(745px){
+            @include mixins.breakpoint(710px){
                 display: none
             }
 
@@ -121,6 +121,9 @@ body{
 
 #partsContainer{
     @include mixins.flex(row, null, space-around);
+    @include mixins.breakpoint(710px){
+        @include mixins.flex(column, center, space-around);
+    }
 
 }
 
@@ -133,7 +136,7 @@ body{
     @include mixins.breakpoint(1365px){
         @include mixins.flex(null, center ,flex-start);
     }
-    @include mixins.breakpoint(745px){
+    @include mixins.breakpoint(710px){
         display: none
     }
 
@@ -414,10 +417,14 @@ body{
 
 #rightContent{
     height: 91.7rem;
+    
     @include mixins.flex(column, null , space-between);
     margin-top: 8.793rem;
     @include mixins.breakpoint(1365px){
         @include mixins.flex(null, center, null);
+    }
+    @include mixins.breakpoint(710px){
+        width: 100%;
     }
     #titleRecent{
         font-family: $poppins;
@@ -435,15 +442,22 @@ body{
 
         #recentTransactionContainer{
             height: 36.3rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include mixins.flex(column,null, space-between);
+
+
+            @include mixins.breakpoint(710px){
+                @include mixins.flex(column, center, null);
+                align-content: center;
+                flex-wrap: wrap;
+                gap: 3rem;
+                // flex-wrap: wrap;
+            }
             .recentStyle{
                 @include mixins.flex(row, center,space-around);
                 @include mixins.breakpoint(1365px){
                     @include mixins.flex(column, center, center);
-
                 }
+
                 .secondContentStyleRecent{
                     @include mixins.breakpoint(1365px){
                         @include mixins.flex(column, center, center);
@@ -512,12 +526,18 @@ body{
         @include mixins.breakpoint(1365px){
             margin-top: 45rem;
         }
+        @include mixins.breakpoint(710px){
+            margin-top: 0;
+        }
         #assetTitle{
             font-family: $poppins;
             font-weight: 700;
             font-size: 2.5rem;
             color: #FFFFFF;
-            margin-bottom: 1.5rem
+            margin-bottom: 1.5rem;
+            @include mixins.breakpoint(1365px){
+                font-size: 2rem;
+            }
         }
         @include mixins.flex(column, null,null);
         @include mixins.breakpoint(1365px){

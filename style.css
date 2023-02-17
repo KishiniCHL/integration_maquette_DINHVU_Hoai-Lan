@@ -19,7 +19,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 710px) {
   #header {
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@ body {
 #header #burgerMenu {
   display: none;
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 710px) {
   #header #burgerMenu {
     display: block;
   }
@@ -60,7 +60,7 @@ body {
     margin-left: 0;
   }
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 710px) {
   #header #containerLogoGreatings #greatingsUser {
     display: none;
   }
@@ -84,7 +84,7 @@ body {
     min-width: 10rem;
   }
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 710px) {
   #header #containNotifSearch #searchBar {
     display: none;
   }
@@ -126,6 +126,14 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
+@media screen and (max-width: 710px) {
+  #partsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
 
 #leftContent {
   margin-top: 13.3rem;
@@ -142,7 +150,7 @@ body {
     justify-content: flex-start;
   }
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 710px) {
   #leftContent {
     display: none;
   }
@@ -440,6 +448,11 @@ body {
     align-items: center;
   }
 }
+@media screen and (max-width: 710px) {
+  #rightContent {
+    width: 100%;
+  }
+}
 #rightContent #titleRecent {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -459,6 +472,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (max-width: 710px) {
+  #rightContent #recentTransactions #recentTransactionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
 }
 #rightContent #recentTransactions #recentTransactionContainer .recentStyle {
   display: flex;
@@ -560,12 +583,22 @@ body {
     margin-top: 45rem;
   }
 }
+@media screen and (max-width: 710px) {
+  #rightContent #assets {
+    margin-top: 0;
+  }
+}
 #rightContent #assets #assetTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
   color: #FFFFFF;
   margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 1365px) {
+  #rightContent #assets #assetTitle {
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 1365px) {
   #rightContent #assets {
