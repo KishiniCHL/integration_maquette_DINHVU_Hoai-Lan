@@ -19,6 +19,21 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 745px) {
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+#header #burgerMenu {
+  display: none;
+}
+@media screen and (max-width: 745px) {
+  #header #burgerMenu {
+    display: block;
+  }
+}
 #header #containerLogoGreatings {
   display: flex;
   align-items: center;
@@ -45,6 +60,11 @@ body {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 745px) {
+  #header #containerLogoGreatings #greatingsUser {
+    display: none;
+  }
+}
 #header #containNotifSearch {
   display: flex;
   flex-direction: row;
@@ -62,6 +82,11 @@ body {
   #header #containNotifSearch #searchBar {
     max-width: 30rem;
     min-width: 10rem;
+  }
+}
+@media screen and (max-width: 745px) {
+  #header #containNotifSearch #searchBar {
+    display: none;
   }
 }
 #header #containNotifSearch #searchBar #searchIconContainer {
@@ -115,6 +140,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 745px) {
+  #leftContent {
+    display: none;
   }
 }
 #leftContent #dashboardContainer {
@@ -203,11 +233,21 @@ body {
   font-weight: bold;
   font-size: 2.2rem;
 }
+@media screen and (max-width: 1365px) {
+  #middleContent #topInfoContent #balanceContainer #balanceText {
+    font-size: 1.7rem;
+  }
+}
 #middleContent #topInfoContent #balanceContainer #bitcoinBalance {
   font-size: 2.9rem;
   font-weight: 700;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 1365px) {
+  #middleContent #topInfoContent #balanceContainer #bitcoinBalance {
+    font-size: 2.4rem;
+  }
 }
 #middleContent #topInfoContent #balanceContainer #bitcoinBalance #iconBTC {
   display: flex;
@@ -314,6 +354,7 @@ body {
   #middleContent #transaction #transactionInfoContainer p {
     font-size: 1.4rem;
     padding: 0.8rem;
+    font-size: 1.2rem;
   }
 }
 #middleContent #transaction #transactionInfoContainer #textTransactionBlue {
@@ -323,12 +364,22 @@ body {
   font-weight: 600;
   font-size: 1.7rem;
 }
+@media screen and (max-width: 1365px) {
+  #middleContent #transaction #transactionInfoContainer #textTransactionBlue {
+    font-size: 1.2rem;
+  }
+}
 #middleContent #transaction #transactionInfoContainer #textTransactionViolet {
   color: #6C1182;
   opacity: 0.7;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.7rem;
+}
+@media screen and (max-width: 1365px) {
+  #middleContent #transaction #transactionInfoContainer #textTransactionViolet {
+    font-size: 1.2rem;
+  }
 }
 #middleContent #transaction #transactionInfoContainer #textTransactionRed {
   color: #D61919;
@@ -337,12 +388,22 @@ body {
   font-weight: 600;
   font-size: 1.7rem;
 }
+@media screen and (max-width: 1365px) {
+  #middleContent #transaction #transactionInfoContainer #textTransactionRed {
+    font-size: 1.2rem;
+  }
+}
 #middleContent #transaction #transactionInfoContainer #textTransactionGreen {
   color: #4AD619;
   opacity: 0.7;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.7rem;
+}
+@media screen and (max-width: 1365px) {
+  #middleContent #transaction #transactionInfoContainer #textTransactionGreen {
+    font-size: 1.2rem;
+  }
 }
 #middleContent #transaction #transactionInfoContainer .tradeButton {
   background-color: #000000;
@@ -354,6 +415,11 @@ body {
   font-size: 1.7rem;
   color: #FFFFFF;
   padding: 0.6rem 1.8rem;
+}
+@media screen and (max-width: 1365px) {
+  #middleContent #transaction #transactionInfoContainer .tradeButton p {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (max-width: 1365px) {
   #middleContent #transaction #transactionInfoContainer .tradeButton {
@@ -379,6 +445,11 @@ body {
   font-weight: 700;
   font-size: 2.2rem;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1365px) {
+  #rightContent #titleRecent {
+    font-size: 2rem;
+  }
 }
 #rightContent #recentTransactions {
   max-width: 40.7rem;
@@ -421,6 +492,11 @@ body {
   opacity: 0.7;
 }
 @media screen and (max-width: 1365px) {
+  #rightContent #recentTransactions #recentTransactionContainer .recentStyle .secondContentStyleRecent {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 1365px) {
   #rightContent #recentTransactions #recentTransactionContainer .recentStyle .thirdContentStyleRecent {
     display: flex;
     flex-direction: column;
@@ -434,11 +510,21 @@ body {
   font-weight: 600;
   font-size: 1.9rem;
 }
+@media screen and (max-width: 1365px) {
+  #rightContent #recentTransactions #recentTransactionContainer .recentStyle .thirdContentStyleRecent .moneyRecentGreen {
+    font-size: 1.4rem;
+  }
+}
 #rightContent #recentTransactions #recentTransactionContainer .recentStyle .thirdContentStyleRecent .moneyRecentRed {
   color: #D61919;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.9rem;
+}
+@media screen and (max-width: 1365px) {
+  #rightContent #recentTransactions #recentTransactionContainer .recentStyle .thirdContentStyleRecent .moneyRecentRed {
+    font-size: 1.4rem;
+  }
 }
 #rightContent #recentTransactions #recentTransactionContainer .recentStyle .thirdContentStyleRecent .dateRecent {
   font-family: "Inter", sans-serif;
@@ -446,6 +532,11 @@ body {
   font-size: 1.9rem;
   color: #FFFFFF;
   opacity: 0.7;
+}
+@media screen and (max-width: 1365px) {
+  #rightContent #recentTransactions #recentTransactionContainer .recentStyle .thirdContentStyleRecent .dateRecent {
+    font-size: 1.4rem;
+  }
 }
 #rightContent #recentTransactions #recentTransactionContainer .recentStyle .recentIconContainer {
   display: flex;
@@ -493,18 +584,42 @@ body {
   border-radius: 3rem;
   padding: 0.6rem 5.1rem 1.1rem 3.2rem;
 }
+@media screen and (max-width: 1365px) {
+  #rightContent #assets #assetsContainer .assetBasicStyle {
+    max-width: 35.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 #rightContent #assets #assetsContainer .assetBasicStyle .firstContentAsset p {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.9rem;
 }
+@media screen and (max-width: 1365px) {
+  #rightContent #assets #assetsContainer .assetBasicStyle .firstContentAsset p {
+    font-size: 1.4rem;
+  }
+}
 #rightContent #assets #assetsContainer .assetBasicStyle .firstContentAsset p:nth-child(3) {
   font-size: 2.7rem;
+}
+@media screen and (max-width: 1365px) {
+  #rightContent #assets #assetsContainer .assetBasicStyle .firstContentAsset p:nth-child(3) {
+    font-size: 2rem;
+  }
 }
 #rightContent #assets #assetsContainer .assetBasicStyle .secondContentAsset p {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 2.7rem;
+}
+@media screen and (max-width: 1365px) {
+  #rightContent #assets #assetsContainer .assetBasicStyle .secondContentAsset p {
+    font-size: 1.4rem;
+  }
 }
 #rightContent #assets #assetsContainer #ethAsset {
   color: #000000;

@@ -22,7 +22,16 @@ body{
 #header{
     margin-top:5.5rem; 
     @include mixins.flex(null, center, space-between);
+    @include mixins.breakpoint(745px){
+        @include mixins.flex(null, center, space-around);
 
+    }
+    #burgerMenu{
+        display: none;
+        @include mixins.breakpoint(745px){
+            display: block;
+        }
+    }
 
     #containerLogoGreatings{
         @include mixins.flex(null, center, space-between);
@@ -44,8 +53,11 @@ body{
             @include mixins.breakpoint(1365px){
                 font-size: 2.4rem;
                 margin-left: 0;
-
             }
+            @include mixins.breakpoint(745px){
+                display: none
+            }
+            
         }
     }
 
@@ -62,6 +74,9 @@ body{
             @include mixins.breakpoint(1365px){
                 max-width: 30rem;
                 min-width: 10rem;
+            }
+            @include mixins.breakpoint(745px){
+                display: none
             }
 
             #searchIconContainer{
@@ -118,6 +133,9 @@ body{
     @include mixins.breakpoint(1365px){
         @include mixins.flex(null, center ,flex-start);
     }
+    @include mixins.breakpoint(745px){
+        display: none
+    }
 
 
     #dashboardContainer{
@@ -145,6 +163,8 @@ body{
                 padding:0;
             }
         }
+        
+        
     }
 
     .dashboardOnglet{
@@ -186,10 +206,6 @@ body{
         width: 80%;
     }
     
-    // background-color: #1970D6;
-    // @include mixins.breakpoint(1365px){
-    //     @include mixins.flex(column,null, center);
-    // }
 
     #topInfoContent{
         margin-top: 3.5rem;
@@ -206,9 +222,15 @@ body{
             #balanceText{
                 font-weight: bold;
                 font-size: 2.2rem;
+                @include mixins.breakpoint(1365px){
+                    font-size: 1.7rem;
+                }
             }   
             #bitcoinBalance{
                 font-size: 2.9rem;
+                @include mixins.breakpoint(1365px){
+                    font-size: 2.4rem;
+                }
                 font-weight: 700;
                         @include mixins.flex(null, center, null);
 
@@ -323,6 +345,7 @@ body{
                 @include mixins.breakpoint(1365px){
                     font-size: 1.4rem;
                     padding: 0.8rem;
+                    font-size: 1.2rem;
                 }
             }
             #textTransactionBlue{
@@ -331,6 +354,9 @@ body{
                 font-family: $inter;
                 font-weight: 600;
                 font-size: 1.7rem;
+                @include mixins.breakpoint(1365px){
+                    font-size: 1.2rem;
+                }
             }
             #textTransactionViolet{
                 color: #6C1182;
@@ -338,6 +364,9 @@ body{
                 font-family: $inter;
                 font-weight: 600;
                 font-size: 1.7rem;
+                @include mixins.breakpoint(1365px){
+                    font-size: 1.2rem;
+                }
             }
             #textTransactionRed{
                 color: #D61919;
@@ -345,6 +374,9 @@ body{
                 font-family: $inter;
                 font-weight: 600;
                 font-size: 1.7rem;
+                @include mixins.breakpoint(1365px){
+                    font-size: 1.2rem;
+                }
             }
             #textTransactionGreen{
                 color: #4AD619;
@@ -352,6 +384,9 @@ body{
                 font-family: $inter;
                 font-weight: 600;
                 font-size: 1.7rem;
+                @include mixins.breakpoint(1365px){
+                    font-size: 1.2rem;
+                }
             }
 
             .tradeButton{
@@ -363,6 +398,9 @@ body{
                     font-size: 1.7rem;
                     color: #FFFFFF;
                     padding: 0.6rem 1.8rem;
+                    @include mixins.breakpoint(1365px){
+                        font-size: 1.2rem;
+                    }
                     
                 }
                 @include mixins.breakpoint(1365px){
@@ -386,6 +424,9 @@ body{
         font-weight: 700;
         font-size: 2.2rem;
         color: #FFFFFF;
+        @include mixins.breakpoint(1365px){
+            font-size: 2rem;
+        }
     }
     #recentTransactions{
         max-width: 40.7rem;
@@ -414,6 +455,9 @@ body{
                     p:nth-child(2){
                         opacity: 0.7;
                     }
+                    @include mixins.breakpoint(1365px){
+                        font-size: 1.4rem;
+                    }
                 }
 
                 .thirdContentStyleRecent{
@@ -425,12 +469,18 @@ body{
                         font-family: $inter;
                         font-weight: 600;
                         font-size: 1.9rem;
+                        @include mixins.breakpoint(1365px){
+                            font-size: 1.4rem;
+                        }
                     }
                     .moneyRecentRed{
                         color: #D61919;
                         font-family: $inter;
                         font-weight: 600;
                         font-size: 1.9rem;
+                        @include mixins.breakpoint(1365px){
+                            font-size: 1.4rem;
+                        }
                     }
                     .dateRecent{
                         font-family: $inter;
@@ -438,6 +488,9 @@ body{
                         font-size: 1.9rem;
                         color: #FFFFFF;
                         opacity: 0.7;
+                        @include mixins.breakpoint(1365px){
+                            font-size: 1.4rem;
+                        }
                     }
                 }
 
@@ -479,15 +532,26 @@ body{
                 height: 17.4rem;
                 border-radius: 3rem;
                 padding: 0.6rem 5.1rem 1.1rem 3.2rem;
+                @include mixins.breakpoint(1365px){
+                    max-width: 35.7rem;
+                    @include mixins.flex(row, center,space-between);
+
+                }
 
                 .firstContentAsset{
                     p{
                         font-family: $inter;
                         font-weight: 600;
                         font-size: 1.9rem;
+                        @include mixins.breakpoint(1365px){
+                            font-size: 1.4rem;
+                        }
                     }
                     p:nth-child(3){
                         font-size: 2.7rem;
+                        @include mixins.breakpoint(1365px){
+                            font-size: 2rem;
+                        }
                     }
                 }
 
@@ -496,6 +560,9 @@ body{
                         font-family: $inter;
                         font-weight: 600;
                         font-size: 2.7rem;
+                        @include mixins.breakpoint(1365px){
+                            font-size: 1.4rem;
+                        }
                     }
                 }
             }
