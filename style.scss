@@ -318,11 +318,19 @@ body{
         }
         margin-top: 2.1rem;
         #transactionTitle{
+            @include mixins.flex(row, center, space-between);
+
             p{
                 font-family: $poppins;
                 font-weight: 700;
                 color: #FFFFFF;
                 font-size: 2.2rem;
+            }
+            p:nth-child(2){
+                opacity: 0.7;
+            }
+            @include mixins.breakpoint(1365px){
+                gap: 3rem;
             }
         }
         #transaction1{
